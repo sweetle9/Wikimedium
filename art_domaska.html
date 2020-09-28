@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+  .morning {
+    width: 300px;
+    height: 700px;
+    background: #FFDEAD;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+    .day {
+      width: 300px;
+      height: 700px;
+      background: #FF5612;
+      position: absolute;
+      top: 10px;
+      left: 310px;
+  }
+    .night {
+    width: 300px;
+    height: 700px;
+    background: #0044D9;
+    position: absolute;
+    top: 10px;
+    left: 610px;
+}
+  .circle1 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: violet;
+    z-index: 1;
+    position: absolute;
+    left: 80px;
+    top: 400px;
+    opacity: 1;
+  }
+  .circle1:hover {
+    top: 50px;
+    background: green;
+    transform: scale(1.5);
+    opacity: .6;
+    border-radius: 10%;
+  }
+  .circle2 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: yellow;
+    z-index: 1;
+    position:absolute;
+    top:100px;
+    left: 390px;
+  }
+  .circle2:hover {
+    top:400px;
+    left: 390px;
+    transform: scale(.2);
+    opacity: .6;
+  }
+  .circle3 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: white;
+    z-index: 1;
+    position:absolute;
+    top:400px;
+    left: 680px;
+  }
+  .circle3:hover {
+    top: 50px;
+    background: brown;
+    transform: scale(1.5);
+    opacity: .6;
+    border-radius: 0%;
+  }
+  .line:hover {
+    background: url(https://wallbeard.com/wp-content/uploads/2019/01/wallpaper-2574943_1920.png);
+    width:300px;
+    position: absolute;
+    top: 5px;
+    left: 310px;
+  }
+  .line {
+    width: 20px;
+    height: 900px;
+    background: orange;
+    position: absolute;
+    top: 110px;
+    left: 450px;
+    transform: rotate(90deg);
+    z-index:1;
+    </style>
+  </head>
+  <body>
+    <div class="line"></div>
+    <div class="circle1"></div>
+    <div class="morning"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <div class="day"></div>
+    <div class="night"></div>
+
+  </body>
+</html>
