@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: 'PT Sans', sans-serif;
 }
 a { color: inherit;
@@ -22,9 +25,19 @@ h3 { margin-top: 36px; font-size: 28px; line-height: 34px; color: rgba(0, 0, 0, 
 h3 + p,
 h3 + blockquote { margin-top: 6px;
 }
-p, blockquote, li { margin-top: 29px; font-size: 20px; line-height: 34px;
+blockquote {
+  font-style: italic;
+  position: relative;
 }
-blockquote { font-style: italic;
+blockquote::before {
+  content: "";
+  background: black;
+  position: absolute;
+  display: block;
+  width: 3px;
+  height: 100%;
+  left: -17px;
+  top:0px;
 }
 img { display: block; width: 1020px; margin: 79px auto 0;
 }
