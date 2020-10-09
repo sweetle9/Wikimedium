@@ -5,7 +5,7 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
 }
 a { color: inherit;
 }
-h1, h2, h3, p, ul, blockquote { width: 700px; margin: 0 auto;
+h1, h2, h3, p, ul, ol, blockquote { width: 700px; margin: 0 auto;
 }
 h1, h2, h3 { font-family: 'PT Sans Caption', sans-serif; font-weight: bold;
 }
@@ -39,15 +39,21 @@ blockquote::before {
   left: -17px;
   top:0px;
 }
-img { display: block; width: 1020px; margin: 79px auto 0;
+.menubar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  padding: 0 20px;
+  border-bottom: 1px solid #aaa;
+  box-shadow: 0 3px 4px 1px rgba(0,0,0,.3);
 }
-img + h2 { margin-top: 79px;
+.menubar a {
+  height: 20px;
+  color: #aaa;
+  text-decoration: none;
 }
-img + p,
-img + blockquote,
-img + ul { margin-top: 77px;
-}
-h2 + img { margin-top: 82px;
-}
-h3 + img { margin-top: 81px;
+.menubar img {
+  height: 100%;
+  width: auto;
 }
