@@ -5,32 +5,72 @@
     <link rel="stylesheet" href="stylesheets/style.css">
     <title></title>
   </head>
+  <body>
   <style media="screen">
     body {
-      height: 100%;
       width: 1440px;
-      display:b block;
+      height: 100%;
       margin: 0 auto;
+      display: block;
       position: relative;
-      backgorund: white;
+      background: white;
     }
     body::before {
-      content:""
-      backgorund: url ("image/1440.jpg");
-      opacity: .2;
+      content: "";
+      background: url(images/1440.jpg);
+      opacity: .1;
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
+      height:100%;
+      z-index: 0;
     }
-
     html {
-      backgorund: #bbb;
-      height: 3253px;
+      background: #bbb;
       position: relative;
+      height: 3253px;
+    }
+    section {
+      display: flex;
+      justify-content: space-between;
+      /* align-items: top; */
+      vertical-align: top;
+      padding top: 80px;
+    }
+    section div {
+      overflow: hidden;
+      width: 50%;
+      padding-left: 40px;
+    }
+    section h1,
+    section p {
+      width: 500px;
+      margin: 0, auto;
+    }
+    section h1 {
+      margin-top: 60px;
+      font-size: 38px;
+      line-height: 45px;
+      margin-bottom: 34px;
+    }
+    section p {
+      font-size: 26px;
+      line-height: 34px;
     }
   </style>
-  <body>
-
-  </body>
-</html>
+  <div class="menubar">
+    <a href="index.html"><img src="images/logo.svg" alt=""></a>
+    <a href="about.html">О проекте</a>
+  </div>
+  <section>
+  <div>
+    <h1>Наглядний пример, чтобы учиться веб-верстке</h1>
+    <p>Разработан для изучения основ веб-вёрстки, языка гипертекстовой разметки HTML и каскадных таблиц стилей CSS</p>
+  </div>
+  <div>
+    <img src="images/about_1.png" alt="">
+  </div>
+  </section>
+    </body>
+  </html>
