@@ -1,5 +1,11 @@
+/* article * {
+  width: 700px;
+  margin: 0 auto;
+} */
 article> p,
 article> blockquote,
+article> ol,
+article> ul,
 article> li {
   margin-top: 29px;
   font-size: 20px;
