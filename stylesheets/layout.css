@@ -1,11 +1,17 @@
 * {
   box-sizing: border-box;
 }
+ol {
+  list-style-type: disc;
+}
 body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: 'PT Sans', sans-serif;
 }
 a { color: inherit;
 }
-h1, h2, h3, p, ul, ol, blockquote { width: 700px; margin: 0 auto;
+/* h1, h2, h3, p, ul, ol, blockquote { width: 700px; margin: 0 auto;
+} */
+article * {
+  width: 700px; margin: 0 auto;
 }
 h1, h2, h3 { font-family: 'PT Sans Caption', sans-serif; font-weight: bold;
 }
@@ -45,8 +51,9 @@ blockquote::before {
   align-items: center;
   height: 50px;
   padding: 0 20px;
-  border-bottom: 1px solid #aaa;
-  box-shadow: 0 3px 4px 1px rgba(0,0,0,.3);
+  /* border-bottom: 1px solid #aaa; */
+  box-shadow: 0 3px 4px 1px rgba(0,0,0,.1);
+  background: white;
 }
 .menubar a {
   height: 20px;
